@@ -25,12 +25,20 @@ Open-loop videos on consecutive WOD-E2E validation frames: the planner (fine-tun
 at every frame (10 Hz) while the camera follows the human driver; played at 0.5x speed. Red: greedy decoding; blue:
 sample-and-verify; green dashed: logged future; gray: the 16 samples.
 
-* [Green light, route straight](assets/videos/1_green_light_straight.mp4): greedy decoding waits and then turns right;
-  SaV goes straight.
-* [Intersection](assets/videos/2_intersection_left_turn.mp4): greedy decoding keeps waiting while the human driver
-  turns left; SaV turns left.
-* [Night, red turns green](assets/videos/3_night_light_turns_green.mp4): SaV starts the left turn as soon as the light
-  turns green; greedy decoding waits 1.6 s longer.
+**Green light, route straight**: greedy decoding waits and then turns right; SaV goes straight
+([mp4](assets/videos/1_green_light_straight.mp4)).
+
+<p align="center"><img src="assets/videos/1_green_light_straight.gif" alt="Green light, route straight" width="100%"></p>
+
+**Intersection**: greedy decoding keeps waiting while the human driver turns left; SaV turns left
+([mp4](assets/videos/2_intersection_left_turn.mp4)).
+
+<p align="center"><img src="assets/videos/2_intersection_left_turn.gif" alt="Intersection" width="100%"></p>
+
+**Night, red turns green**: SaV starts the left turn as soon as the light turns green; greedy decoding waits 1.6 s
+longer ([mp4](assets/videos/3_night_light_turns_green.mp4)).
+
+<p align="center"><img src="assets/videos/3_night_light_turns_green.gif" alt="Night, red turns green" width="100%"></p>
 
 ## Installation
 
