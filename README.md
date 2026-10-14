@@ -19,6 +19,19 @@ The repository covers
 Fine-tuning the planners themselves is not part of this repository; SaV works with candidate files from any planner
 (format below).
 
+## Qualitative results
+
+Open-loop videos on consecutive WOD-E2E validation frames: the planner (fine-tuned Alpamayo-10B, 16 samples) replans
+at every frame (10 Hz) while the camera follows the human driver; played at 0.5x speed. Red: greedy decoding; blue:
+sample-and-verify; green dashed: logged future; gray: the 16 samples.
+
+* [Green light, route straight](assets/videos/1_green_light_straight.mp4): greedy decoding waits and then turns right;
+  SaV goes straight.
+* [Intersection](assets/videos/2_intersection_left_turn.mp4): greedy decoding keeps waiting while the human driver
+  turns left; SaV turns left.
+* [Night, red turns green](assets/videos/3_night_light_turns_green.mp4): SaV starts the left turn as soon as the light
+  turns green; greedy decoding waits 1.6 s longer.
+
 ## Installation
 
 ```bash
