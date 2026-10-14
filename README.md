@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.jpg" alt="Sample-and-verify planning" width="100%"></p>
+
 # Greedy Decoding Hides Good Plans: Sample-and-Verify Planning for Vision-Language Driving Models
 
 Code for **sample-and-verify (SaV)**. A fine-tuned vision-language planner writes its plan as text and is almost
